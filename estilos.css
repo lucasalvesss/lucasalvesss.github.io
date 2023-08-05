@@ -1,0 +1,248 @@
+body {
+  background-color: #f2f2f2;
+  display: grid;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.banner {
+  background-image: url(christin-hume-Hcfwew744z4-unsplash.jpg);
+  background-size: cover;
+  height: 47%;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+}
+
+.lista {
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.lista #menu {
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  margin-left: 60%;
+}
+
+#menu li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  padding: 5px;
+}
+
+#menu li a:hover {
+  transition: 0.3s;
+  color: #ffa000;
+  font-size: 18px;
+}
+
+#menu li {
+  justify-content: end;
+  text-align: end;
+  padding: 10px;
+}
+
+p.presentacion {
+  color: white;
+  display: grid;
+  margin: 2% 70% 5% 3%;
+  align-items: center;
+}
+
+.nombre {
+  display: flex;
+  margin: 3% 0 0 3%;
+  white-space: nowra  p;
+  overflow: hidden;
+  animation: aparecer 5s ease-in-out forwards;
+  color: white;
+}
+
+@keyframes aparecer {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.dib1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+img {
+  border-radius: 20px;
+  height: 400px;
+  margin-left: 50px;
+  box-shadow: 0 0 20px 0 black;
+}
+
+img:hover {
+  box-shadow: 5px 10px 10px black;
+  transition: 0.5s;
+}
+
+hr {
+  box-shadow: 4px -2px 3px 0px #ffa000;
+  margin-inline: 50px;
+  margin-top: 100px;
+}
+.titulo{
+  text-align: center;
+}
+table{
+  background-color: #f2f2f2; 
+  color: black; 
+  margin: auto;
+}
+td{
+  padding: 10px 20px 10px 20px;
+}
+
+
+th {
+  background-color: #ffa000; 
+  color: white; 
+}
+
+.ventana {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.ventana:target {
+  display: flex;
+}
+
+input[type="text"]{
+  width: 100%;
+}
+
+.contenido {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: start;
+}
+
+.cerrar-ventana {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form:valid ~ .cerrar-ventana {
+  display: none;
+}
+
+a.cerrar-ventana {
+  text-decoration: none;
+  margin: -30px 87% 0  0;
+  display: grid;
+  background-color: black;
+  padding: 1.5%;
+  border: 1px solid black;
+  color: white;
+  border-radius: 3px;
+  font-size: small;
+}
+
+label, .formulario {
+  color: black;
+  font-size: larger;
+}
+
+.texto {
+  border: none;
+  border-bottom: 2px solid #ffa000;
+  font-size: small;
+  padding-left: 5px;
+}
+
+.texto:focus::placeholder {
+  color: transparent;
+}
+
+#enviar {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  margin: 10px 0 0 87%;
+  border: 1px solid black;
+  padding: 1.5%;
+  border-radius: 3px;
+  background-color: black;
+  transform: uppercase;
+}
+
+.cerrar-ventana:hover, #enviar:hover {
+  box-shadow: 0 0 20px 5px #ffa000;
+}
+
+.titulos {
+  padding-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+#social {
+  color: white;
+  margin-left: 45%;
+  font-size: small;
+}
+
+.redes {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.insta, .face, .twitter {
+  border-radius: 10px;
+  height: 30px;
+  box-shadow: 0 0 0 0;
+}
+
+p#desarrollo{
+  text-align: center;
+}
+#html, #css, #js {
+  display: flex;
+  height: 30px;
+  margin: 5px 100px 10px;
+  box-shadow: none;
+}
+
+#logos{
+  margin-top: -120px;
+  margin-left: 48%;
+}
+
